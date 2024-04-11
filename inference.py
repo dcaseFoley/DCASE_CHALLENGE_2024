@@ -103,8 +103,8 @@ class BaseLineModel(SoundSynthesisModel):
         self.vqvae.eval()
 
         self.hifi_gan = HiFiGanWrapper(
-            './checkpoint/hifigan/g_00935000',
-            './checkpoint/hifigan/hifigan_config.json',
+            './checkpoint/hifi-gan/g_00935000',
+            './checkpoint/hifi-gan/hifigan_config.json',
         )
 
     @torch.no_grad()
